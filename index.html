@@ -6,35 +6,63 @@
     <title>project</title>
     <link href="asset/vendor/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="asset/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="asset/img/logo.png" class="img-logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id=menutentang data-bs-toggle="dropdown" aria-expanded="false">Tentang</a>
+            <ul class="dropdown-menu" aria-labelledby="menutentang">
+                <li><a class="dropdown-item" href="#">action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id=menuproduk data-bs-toggle="dropdown" aria-expanded="false">Produk</a>
+                <ul class="dropdown-menu" aria-labelledby="menuproduk">
+                    <li><a class="dropdown-item" href="#">action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id=menulayanan data-bs-toggle="dropdown" aria-expanded="false">Layanan</a>
+                <ul class="dropdown-menu" aria-labelledby="menulayanan">
+                    <li><a class="dropdown-item" href="#">action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Kontak</a>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <a role="button" class="btn btn-login">Masuk</a>
+        </form>
+      </div>
     </div>
-</nav>
+  </nav>
+
+  <!-- floating-whatsapp -->
+
+<div class="float-whatsapp">
+    <a class href="https://wa.link/55bn29" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true" ></i>
+    </a>
+</div>
+
 <!-- end: Navbar -->
 
 <main class="container">
@@ -113,6 +141,6 @@
         </div>
     </section>
 </main>
-<script src="asset/vendor/node_modules/bootstrap/dist/js/bootstrap.js" ></script>
+<script src="asset/vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>
